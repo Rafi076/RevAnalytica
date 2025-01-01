@@ -8,12 +8,12 @@ def create_ui():
     root.configure(bg="#87CEEB")
 
     # Labels and Entry fields
-    Label(root, text="Please fill This form: ", font=("Arial", 16, "bold"), bg="#87CEEB", fg="#000000").place(x=550, y=20)
+    Label(root, text="Please fill This form: ", font=("Arial", 16, "bold"), bg="#87CEEB", fg="#000000").place(x=20, y=20)
 
     # Labels
     Label(root, text='Customer ID: ', font=("Arial", 12), bg="#87CEEB", fg="black").place(x=20, y=80)
     Label(root, text='Transaction ID:', font=("Arial", 12), bg="#87CEEB", fg="black").place(x=700, y=80)
-    Label(root, text='Salesperson:', font=("Arial", 12), bg="#87CEEB", fg="black").place(x=20, y=120)
+    Label(root, text='Salesperson ID:', font=("Arial", 12), bg="#87CEEB", fg="black").place(x=20, y=120)
     Label(root, text='Date: ', font=("Arial", 12), bg="#87CEEB", fg="black").place(x=20, y=300)
     Label(root, text='Month of Sale: ', font=("Arial", 12), bg="#87CEEB", fg="black").place(x=20, y=200)
     Label(root, text='Item Set: ', font=("Arial", 12), bg="#87CEEB", fg="black").place(x=20, y=380)
@@ -49,7 +49,7 @@ def create_ui():
 
     # Positioning entry fields
     entries = [
-        (customerIDEntry, 150, 80), (transactionIDEntry, 880, 80), (salespersonIDEntry, 150, 120),
+        (customerIDEntry, 150, 80), (transactionIDEntry, 880, 80), (salespersonIDEntry, 160, 120),
         (dateEntry, 150, 300), (monthEntry, 150, 200), (itemSetEntry, 150, 380),
         (productCategoryEntry, 150, 420), (quantitySoldEntry, 150, 460), (pricePerUnitEntry, 550, 420),
         (totalSaleAmountEntry, 550, 460), (paymentMethodEntry, 970, 380), (profitMarginEntry, 970, 420),
